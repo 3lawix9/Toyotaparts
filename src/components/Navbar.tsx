@@ -10,21 +10,21 @@ const Navbar = () => {
     <nav className="bg-white shadow-md fixed w-full top-0 z-50" dir="rtl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo - Right side */}
+          {/* Logo - Left side */}
           <div className="flex-shrink-0">
             <img 
               className="h-10 w-auto" 
               src={content.navbar.logo} 
               alt="النجيدي لبيع قطع غيار تويوتا"
               onError={(e) => {
-                e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTIwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRUIwQTFFIi8+Cjx0ZXh0IHg9IjYwIiB5PSIyNCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4KuC4KuI4Kuk4KuL4KuI4Kqk4Ka+PC90ZXh0Pgo8L3N2Zz4K';
+                e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTIwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRUIwQTFFIi8+Cjx0ZXh0IHg9IjYwIiB5PSIyNCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VG95b3RhPC90ZXh0Pgo8L3N2Zz4K';
               }}
             />
           </div>
 
-          {/* Desktop Navigation - Left side */}
-          <div className="hidden md:block">
-            <div className="mr-10 flex items-baseline space-x-4 space-x-reverse">
+          {/* Desktop Navigation - Center */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
+            <div className="flex items-baseline space-x-4 space-x-reverse">
               {content.navbar.links.map((link, index) => (
                 <a
                   key={index}

@@ -3,7 +3,7 @@ import content from '../data/content.js';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden" dir="rtl">
+    <section id="section-0" className="relative h-screen flex items-center justify-center overflow-hidden" dir="rtl">
       {/* Background Video */}
       <video
         autoPlay
@@ -28,8 +28,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 font-cairo animate-fade-in">
+      <div className="relative z-10 text-center  px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <h1 className="text-4xl  sm:text-5xl lg:text-6xl font-bold text-white mb-6 font-cairo  animate-fade-in">
           {content.hero.title}
         </h1>
         <p className="text-xl sm:text-2xl lg:text-3xl text-white font-cairo font-medium animate-fade-in" style={{animationDelay: '0.3s'}}>

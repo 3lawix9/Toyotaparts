@@ -1,5 +1,5 @@
 
-import { MapPin } from 'lucide-react';
+import { MapPin, Clock, ExternalLink } from 'lucide-react';
 
 interface BranchCardProps {
   branch: {
@@ -28,39 +28,38 @@ const BranchCard = ({ branch, index }: BranchCardProps) => {
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div className="absolute bottom-4 right-4 bg-toyota-red text-white px-3 py-1 rounded-full text-sm font-semibold">
+          فرع {branch.id}
+        </div>
       </div>
 
       {/* Card Content */}
       <div className="p-6">
-        <h3 className="text-xl font-bold text-toyota-gray-dark mb-2 font-cairo">
+        <h3 className="text-2xl font-bold text-toyota-gray-dark mb-4 font-cairo">
           {branch.name}
         </h3>
         
-        <div className="flex items-center text-gray-600 mb-2">
-          <MapPin className="w-4 h-4 ml-2 text-toyota-red" />
-          <span className="font-cairo">{branch.street}</span>
-        </div>
-
-        <div className="flex items-center text-gray-600 mb-4">
-          <div className="w-4 h-4 ml-2 flex items-center justify-center">
-            <svg className="w-3 h-3 text-toyota-red" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-            </svg>
+        <div className="space-y-3">
+          <div className="flex items-center text-gray-600">
+            <MapPin className="w-5 h-5 ml-2 text-toyota-red" />
+            <span className="font-cairo text-lg">{branch.street}</span>
           </div>
-          <span className="font-cairo text-sm">{branch.hours}</span>
+
+          <div className="flex items-center text-gray-600">
+            <Clock className="w-5 h-5 ml-2 text-toyota-red" />
+            <span className="font-cairo text-lg">{branch.hours}</span>
+          </div>
         </div>
 
-        {/* CTA Button */}
         <a
           href={branch.mapsLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center w-full bg-toyota-red hover:bg-toyota-red-dark text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 font-cairo focus:outline-none focus:ring-2 focus:ring-toyota-red focus:ring-offset-2"
-          aria-label={`افتح موقع ${branch.name} في خرائط قوقل`}
+          className="mt-6 inline-flex items-center justify-center w-full bg-toyota-gray-dark hover:bg-toyota-red text-white font-bold py-3 px-4 rounded-lg transition-colors duration-300"
         >
-          <MapPin className="w-4 h-4 ml-2" />
-          افتح في خرائط قوقل
+          <span className="ml-2">عرض على الخريطة</span>
+          <ExternalLink className="w-5 h-5" />
         </a>
       </div>
     </div>

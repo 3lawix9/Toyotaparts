@@ -1,50 +1,50 @@
 
 const content = {
   navbar: {
-    logo: "/toyota.svg",
+    logo: "/logo.png",
     links: ["الرئيسية", "من نحن", "موقع الفروع", "تواصل معنا"]
   },
   hero: {
     title: "النجيدي لبيع قطع غيار تويوتا الأصلية",
     subtitle: "وكيل معتمد من عبداللطيف جميل",
-    videoUrl: "/toyota-video.mp4"
+    videoUrl: "/hero.mp4"
   },
   branches: [
     {
       id: 1,
-      name: "فرع الرياض الأول",
-      street: "شارع العليا",
+      name: "النجيدي الفرع الأول",
+      street: "طريق الأمير سعد بن عبدالرحمن",
       hours: "من 8 صباحاً إلى 9 مساءً",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop",
-      mapsLink: "https://maps.google.com/?q=شارع+العليا+الرياض"
+      image: "/nuj1.jpg",
+      mapsLink: "https://maps.app.goo.gl/xjphR1wosm95prHN7"
     },
     {
       id: 2,
-      name: "فرع الرياض الثاني", 
-      street: "شارع التحلية",
+      name: "النجيدي الفرع الثاني",
+      street: "طريق الأمير سعد بن عبدالرحمن",
       hours: "من 8 صباحاً إلى 9 مساءً",
-      image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?w=400&h=300&fit=crop",
+      image: "/nuj3.png",
       mapsLink: "https://maps.google.com/?q=شارع+التحلية+الرياض"
     },
     {
       id: 3,
-      name: "فرع الرياض الثالث",
-      street: "شارع الملك فهد",
+      name: "النجيدي الفرع الثالث ",
+      street: "شارع طلحة بن عبيد الله",
       hours: "من 8 صباحاً إلى 9 مساءً",
-      image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3?w=400&h=300&fit=crop",
-      mapsLink: "https://maps.google.com/?q=شارع+الملك+فهد+الرياض"
+      image: "/nuj2.jpg",
+      mapsLink: "https://maps.app.goo.gl/U8mr1RpWSuhVKw3WA"
     }
   ],
   contact: {
-    whatsapp: "+966500000000",
+    whatsapp: "0554508807",
     email: "info@alnujaidi.com",
-    phone: "+966 123 50 966",
+    phone: "+9660554508807",
     address: "الرياض، السعودية"
   },
   footer: {
-    slogan: "منصة شاملة لتطوير الأعمال الرقمية وتحقيق أفضل النتائج من خلال حلول تقنية متطورة",
+    slogan: "وكيل معتمد لقطع غيار تويوتا الأصلية بأفضل الأسعار ",
     quickLinks: ["الرئيسية", "من نحن", "الخدمات", "اتصل بنا"],
-    copyright: "2024 جميع الحقوق محفوظة، النجيدي"
+    copyright: "2025 جميع الحقوق محفوظة، النجيدي"
   }
 }
 

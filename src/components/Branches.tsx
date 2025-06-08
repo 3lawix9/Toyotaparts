@@ -13,7 +13,7 @@ const Branches = () => {
           </h2>
           <div className="w-24 h-1 bg-toyota-red mx-auto rounded-full"></div>
           <p className="mt-4 text-lg text-gray-600 font-cairo max-w-2xl mx-auto">
-            زوروا أحد فروعنا الثلاثة في مدينة الرياض للحصول على أفضل قطع غيار تويوتا الأصلية
+            زوروا أحد فروعنا الثلاثة في مدينة لشراء قطع غيار تويوتا الأصلية
           </p>
         </div>
 

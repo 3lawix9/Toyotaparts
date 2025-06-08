@@ -1,4 +1,6 @@
-User-agent: Googlebot
+User-agent: *
+Allow: /
+
 Allow: /
 
 User-agent: Bingbot

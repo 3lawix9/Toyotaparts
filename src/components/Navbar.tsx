@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md fixed w-full top-0 z-50" dir="rtl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo - Left side */}
           <div className="flex-shrink-0">
             <Link
@@ -29,7 +29,7 @@ const Navbar = () => {
               className="cursor-pointer"
             >
               <img 
-                className="h-16 w-36" 
+                 className="h-[76px] w-32"
                 src={content.navbar.logo}
                 alt="النجيدي لبيع قطع غيار تويوتا"
               />
